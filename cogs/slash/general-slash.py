@@ -32,7 +32,7 @@ class General(commands.Cog, name="general-slash"):
         :param interaction: The application command interaction.
         """
         embed = disnake.Embed(
-            description="Used [Krypton's](https://krypton.ninja) template",
+            description="Used [Williamhelle's](https://github.com/williamhelle/Bagley-Discord-Personal/) source code",
             color=0x9C84EF
         )
         embed.set_author(
@@ -40,7 +40,7 @@ class General(commands.Cog, name="general-slash"):
         )
         embed.add_field(
             name="Owner:",
-            value="Krypton#7331",
+            value="caaaaviar#6354",
             inline=True
         )
         embed.add_field(
@@ -50,7 +50,12 @@ class General(commands.Cog, name="general-slash"):
         )
         embed.add_field(
             name="Prefix:",
-            value=f"/ (Slash Commands) or {self.bot.config['prefix']} for normal commands",
+            value=f"/ (Slash Commands)   or   {self.bot.config['prefix']}",
+            inline=False
+        )
+        embed.add_field(
+            name="Bonus",
+            value=f"Mario Bros | Lvl 1",
             inline=False
         )
         embed.set_footer(
@@ -152,7 +157,7 @@ class General(commands.Cog, name="general-slash"):
         :param interaction: The application command interaction.
         """
         embed = disnake.Embed(
-            description=f"Join the support server for the bot by clicking [here](https://discord.gg/mTBrXyWxAF).",
+            description=f"Join the support server for the bot by clicking [here](https://discord.gg/ddDfRJh4GW).",
             color=0xD75BF4
         )
         try:
