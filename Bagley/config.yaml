@@ -1,0 +1,17 @@
+name: "Bot Discord Python"
+description: "Lance des bots discord en python basé sur les librairies aiohttp et disnake situé dans le dossier ~/share/Discord"
+version: "1.1.0"
+slug: "discord_bot"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options:
+  dir: "share/Discord"
+  installpy: "disnake"
+shema:
+  dir: str
+  installpy: str
