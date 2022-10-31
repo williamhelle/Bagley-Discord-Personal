@@ -3,8 +3,9 @@
 
 
 # Create main config
-INSTALLPY=$(bashio::config 'installpy')
+BOTPY=$(bashio::config 'botpy')
 DIRBOT=$(bashio::config 'dirbot')
+INSTALLPY=$(bashio::config 'installpy')
 
 
 
@@ -12,8 +13,9 @@ DIRBOT=$(bashio::config 'dirbot')
 bashio::log.info "-------------------------------------------------------------"
 bashio::log.info "Récapitulatif des configurations pour le bot"
 bashio::log.info "-------------------------------------------------------------"
-echo "option installpy \"${INSTALLPY}\";"
+echo "option botpy \"${BOTPY}\";"
 echo "option dirbot \"${DIRBOT}\";"
+echo "option installpy \"${INSTALLPY}\";"
 bashio::log.info "-------------------------------------------------------------"
 
 
@@ -39,9 +41,10 @@ bashio::log.info "Success"
 
 bashio::log.info "-------------------------------------------------------------"
 bashio::log.info "Lancement du script du bot Discord en python"
+bashio::log.info "python3 (~/${DIRBOT}/${BOTPY})"
 bashio::log.info "-------------------------------------------------------------"
 
-python3 bot.py
+python3 ${BOTPY}
 bashio::log.info "Le bot s'est arrêté ou à crash"
 bashio::log.info "Arrêt du bot Discord"
 
