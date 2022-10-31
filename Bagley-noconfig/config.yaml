@@ -1,5 +1,5 @@
 name: "Bot Discord Python 2"
-description: "Lance des bots discord en python basé sur les librairies aiohttp et disnake situé dans le dossier ~/share/Discord"
+description: "Lance des bots discord en python"
 version: "1.1.0"
 slug: "discord_bot_no_config"
 init: false
