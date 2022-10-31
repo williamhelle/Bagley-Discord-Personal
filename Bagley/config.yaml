@@ -10,8 +10,10 @@ arch:
   - armv7
   - i386
 options:
+  botpy: "bot.py"
   dirbot: "share/Discord"
   installpy: "disnake"
 shema:
+  botpy: str
   dirbot: str
   installpy: str
